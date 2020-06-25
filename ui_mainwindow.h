@@ -21,7 +21,6 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QRadioButton>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -38,30 +37,39 @@ public:
     QAction *actionEdit_tool_table;
     QAction *actionLadder_edit;
     QWidget *centralWidget;
-    QRadioButton *x;
-    QRadioButton *y;
-    QRadioButton *z;
-    QPushButton *add;
-    QPushButton *neg;
     QWidget *horizontalLayoutWidget;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *estop;
-    QPushButton *pushButton_2;
     QPushButton *power;
-    QPushButton *pushButton;
+    QPushButton *open;
+    QPushButton *reopen;
+    QWidget *horizontalLayoutWidget_2;
+    QHBoxLayout *horizontalLayout;
+    QPushButton *pushButton_3;
+    QPushButton *pushButton_5;
+    QPushButton *pushButton_4;
+    QPushButton *pushButton_2;
+    QWidget *horizontalLayoutWidget_3;
+    QHBoxLayout *horizontalLayout_3;
+    QRadioButton *x;
+    QRadioButton *y;
+    QRadioButton *z;
+    QWidget *horizontalLayoutWidget_4;
+    QHBoxLayout *horizontalLayout_4;
+    QPushButton *neg;
+    QPushButton *add;
     QMenuBar *menuBar;
     QMenu *menuOpen;
     QMenu *menuMachine;
     QMenu *menuView;
     QMenu *menuHelp;
-    QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(800, 400);
+        MainWindow->resize(932, 660);
         actionOpen = new QAction(MainWindow);
         actionOpen->setObjectName(QStringLiteral("actionOpen"));
         actionRecent_files = new QAction(MainWindow);
@@ -80,26 +88,11 @@ public:
         actionLadder_edit->setObjectName(QStringLiteral("actionLadder_edit"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        x = new QRadioButton(centralWidget);
-        x->setObjectName(QStringLiteral("x"));
-        x->setGeometry(QRect(40, 60, 21, 22));
-        y = new QRadioButton(centralWidget);
-        y->setObjectName(QStringLiteral("y"));
-        y->setGeometry(QRect(70, 60, 21, 22));
-        z = new QRadioButton(centralWidget);
-        z->setObjectName(QStringLiteral("z"));
-        z->setGeometry(QRect(100, 60, 21, 22));
-        add = new QPushButton(centralWidget);
-        add->setObjectName(QStringLiteral("add"));
-        add->setGeometry(QRect(80, 80, 31, 27));
-        neg = new QPushButton(centralWidget);
-        neg->setObjectName(QStringLiteral("neg"));
-        neg->setGeometry(QRect(40, 80, 31, 27));
         horizontalLayoutWidget = new QWidget(centralWidget);
         horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(0, 0, 161, 31));
+        horizontalLayoutWidget->setGeometry(QRect(0, 0, 311, 25));
         horizontalLayout_2 = new QHBoxLayout(horizontalLayoutWidget);
-        horizontalLayout_2->setSpacing(6);
+        horizontalLayout_2->setSpacing(3);
         horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
@@ -109,25 +102,94 @@ public:
 
         horizontalLayout_2->addWidget(estop);
 
-        pushButton_2 = new QPushButton(horizontalLayoutWidget);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-
-        horizontalLayout_2->addWidget(pushButton_2);
-
         power = new QPushButton(horizontalLayoutWidget);
         power->setObjectName(QStringLiteral("power"));
 
         horizontalLayout_2->addWidget(power);
 
-        pushButton = new QPushButton(horizontalLayoutWidget);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
+        open = new QPushButton(horizontalLayoutWidget);
+        open->setObjectName(QStringLiteral("open"));
 
-        horizontalLayout_2->addWidget(pushButton);
+        horizontalLayout_2->addWidget(open);
+
+        reopen = new QPushButton(horizontalLayoutWidget);
+        reopen->setObjectName(QStringLiteral("reopen"));
+
+        horizontalLayout_2->addWidget(reopen);
+
+        horizontalLayoutWidget_2 = new QWidget(centralWidget);
+        horizontalLayoutWidget_2->setObjectName(QStringLiteral("horizontalLayoutWidget_2"));
+        horizontalLayoutWidget_2->setGeometry(QRect(310, 0, 311, 25));
+        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget_2);
+        horizontalLayout->setSpacing(3);
+        horizontalLayout->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        pushButton_3 = new QPushButton(horizontalLayoutWidget_2);
+        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
+
+        horizontalLayout->addWidget(pushButton_3);
+
+        pushButton_5 = new QPushButton(horizontalLayoutWidget_2);
+        pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
+
+        horizontalLayout->addWidget(pushButton_5);
+
+        pushButton_4 = new QPushButton(horizontalLayoutWidget_2);
+        pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
+
+        horizontalLayout->addWidget(pushButton_4);
+
+        pushButton_2 = new QPushButton(horizontalLayoutWidget_2);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+
+        horizontalLayout->addWidget(pushButton_2);
+
+        horizontalLayoutWidget_3 = new QWidget(centralWidget);
+        horizontalLayoutWidget_3->setObjectName(QStringLiteral("horizontalLayoutWidget_3"));
+        horizontalLayoutWidget_3->setGeometry(QRect(0, 20, 91, 41));
+        horizontalLayout_3 = new QHBoxLayout(horizontalLayoutWidget_3);
+        horizontalLayout_3->setSpacing(0);
+        horizontalLayout_3->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
+        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
+        x = new QRadioButton(horizontalLayoutWidget_3);
+        x->setObjectName(QStringLiteral("x"));
+
+        horizontalLayout_3->addWidget(x);
+
+        y = new QRadioButton(horizontalLayoutWidget_3);
+        y->setObjectName(QStringLiteral("y"));
+
+        horizontalLayout_3->addWidget(y);
+
+        z = new QRadioButton(horizontalLayoutWidget_3);
+        z->setObjectName(QStringLiteral("z"));
+
+        horizontalLayout_3->addWidget(z);
+
+        horizontalLayoutWidget_4 = new QWidget(centralWidget);
+        horizontalLayoutWidget_4->setObjectName(QStringLiteral("horizontalLayoutWidget_4"));
+        horizontalLayoutWidget_4->setGeometry(QRect(0, 59, 91, 31));
+        horizontalLayout_4 = new QHBoxLayout(horizontalLayoutWidget_4);
+        horizontalLayout_4->setSpacing(6);
+        horizontalLayout_4->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
+        horizontalLayout_4->setContentsMargins(0, 0, 0, 0);
+        neg = new QPushButton(horizontalLayoutWidget_4);
+        neg->setObjectName(QStringLiteral("neg"));
+
+        horizontalLayout_4->addWidget(neg);
+
+        add = new QPushButton(horizontalLayoutWidget_4);
+        add->setObjectName(QStringLiteral("add"));
+
+        horizontalLayout_4->addWidget(add);
 
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 800, 23));
+        menuBar->setGeometry(QRect(0, 0, 932, 23));
         menuOpen = new QMenu(menuBar);
         menuOpen->setObjectName(QStringLiteral("menuOpen"));
         menuMachine = new QMenu(menuBar);
@@ -137,9 +199,6 @@ public:
         menuHelp = new QMenu(menuBar);
         menuHelp->setObjectName(QStringLiteral("menuHelp"));
         MainWindow->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(MainWindow);
-        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
-        MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
         statusBar = new QStatusBar(MainWindow);
         statusBar->setObjectName(QStringLiteral("statusBar"));
         MainWindow->setStatusBar(statusBar);
@@ -173,18 +232,22 @@ public:
         actionProperties->setText(QApplication::translate("MainWindow", "properties", 0));
         actionEdit_tool_table->setText(QApplication::translate("MainWindow", "edit tool table", 0));
         actionLadder_edit->setText(QApplication::translate("MainWindow", "ladder edit", 0));
-        x->setText(QString());
-        y->setText(QString());
-        z->setText(QString());
-        add->setText(QApplication::translate("MainWindow", "+", 0));
-        neg->setText(QApplication::translate("MainWindow", "-", 0));
 #ifndef QT_NO_WHATSTHIS
         estop->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p>estop</p></body></html>", 0));
 #endif // QT_NO_WHATSTHIS
         estop->setText(QApplication::translate("MainWindow", "estop", 0));
-        pushButton_2->setText(QApplication::translate("MainWindow", "open", 0));
         power->setText(QApplication::translate("MainWindow", "power", 0));
-        pushButton->setText(QApplication::translate("MainWindow", "reopen", 0));
+        open->setText(QApplication::translate("MainWindow", "open", 0));
+        reopen->setText(QApplication::translate("MainWindow", "reopen", 0));
+        pushButton_3->setText(QApplication::translate("MainWindow", "begin", 0));
+        pushButton_5->setText(QApplication::translate("MainWindow", "execute", 0));
+        pushButton_4->setText(QApplication::translate("MainWindow", "pause", 0));
+        pushButton_2->setText(QApplication::translate("MainWindow", "stop", 0));
+        x->setText(QString());
+        y->setText(QString());
+        z->setText(QString());
+        neg->setText(QApplication::translate("MainWindow", "-", 0));
+        add->setText(QApplication::translate("MainWindow", "+", 0));
         menuOpen->setTitle(QApplication::translate("MainWindow", "file", 0));
         menuMachine->setTitle(QApplication::translate("MainWindow", "machine", 0));
         menuView->setTitle(QApplication::translate("MainWindow", "view", 0));

@@ -56,9 +56,8 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+
     ui->setupUi(this);
-    printf("********go**********");
-	
 
     tryNml();
 	sendDebug(0xfffffff);
@@ -67,7 +66,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->add,SIGNAL(clicked(bool)),this,SLOT(add()));
 	QObject::connect(ui->neg,SIGNAL(clicked(bool)),this,SLOT(neg()));
 	
-	printf("******************");
+
 }
 
 MainWindow::~MainWindow()
